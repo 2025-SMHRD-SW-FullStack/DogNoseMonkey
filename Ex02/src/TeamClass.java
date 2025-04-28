@@ -6,5 +6,6 @@ public class TeamClass {
 		System.out.println("팀원 1 두번째");
 		System.out.println("팀원 2 세번째");
 		System.out.println("팀원 3 네번째");
+		System.out.println("팀 개코원숭이");
 	}
 }
