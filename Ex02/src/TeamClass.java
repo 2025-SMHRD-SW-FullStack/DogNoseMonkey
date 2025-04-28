@@ -15,7 +15,7 @@ public class TeamClass {
 		System.out.println("홍준모 바보");
 		System.out.println("김승혁 바보");
 		System.out.println("Team 개코원숭이");
-		System.out.println("나만의 작업공간 branch"); 
 
+		System.out.println("나만의 작업 공간 branch");
 	}
 }
