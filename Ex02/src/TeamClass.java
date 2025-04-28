@@ -6,6 +6,6 @@ public class TeamClass {
 		System.out.println("서명우 바보");  
 		System.out.println("홍준모 바보");
 		System.out.println("김승형 바보");
-
+		System.out.println("Team 개코원숭이");
 	}
 }
