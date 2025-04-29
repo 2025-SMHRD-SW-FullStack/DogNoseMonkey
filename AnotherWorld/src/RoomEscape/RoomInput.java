@@ -5,7 +5,7 @@ import java.util.concurrent.BlockingQueue;
 
 public class RoomInput extends Thread {
     private BlockingQueue<String> inputQueue; // 입력 전체를 String으로 받도록 변경
-    private volatile boolean running = true;
+    private boolean running = true;
 
     public RoomInput(BlockingQueue<String> inputQueue) {
         this.inputQueue = inputQueue;
