@@ -43,7 +43,7 @@ public class RoomLogic implements Runnable {
                     } else {
                         currentStage = 1;
                         Image();
-                        ui.displayMessage("틀렸습니다!");
+                        ui.displayMessage("You Died!");
                         ui.displayMessage("처음부터 다시 시작합니다.");
                     }
                     break;
@@ -59,7 +59,7 @@ public class RoomLogic implements Runnable {
                         } else {
                             currentStage = 1;
                             Image();
-                            ui.displayMessage("틀렸습니다!");
+                            ui.displayMessage("You Died!");
                             ui.displayMessage("처음부터 다시 시작합니다.");
                         }
                     }
@@ -72,7 +72,7 @@ public class RoomLogic implements Runnable {
                     } else {
                         currentStage = 1;
                         Image();
-                        ui.displayMessage("틀렸습니다!");
+                        ui.displayMessage("You Died!");
                         ui.displayMessage("처음부터 다시 시작합니다.");
                     }
                     break;
