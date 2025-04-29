@@ -8,11 +8,11 @@ public class Main {
         BlockingQueue<String> inputQueue = new LinkedBlockingQueue<>();
         RoomUI ui = new RoomUI();
         RoomLogic roomlogic = new RoomLogic(inputQueue, ui);
-        RoomInput inputHandler = new RoomInput(inputQueue);
+        RoomInput roominput = new RoomInput(inputQueue);
 
         Thread logicThread = new Thread(roomlogic);
         logicThread.start();
-        inputHandler.start();
+        roominput.start();
 
         // 게임 종료 시 스레드를 안전하게 종료하기 위한 코드 (예시 - 특정 조건 발생 시)
         // try {
