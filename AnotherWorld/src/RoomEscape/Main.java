@@ -7,10 +7,10 @@ public class Main {
     public static void main(String[] args) {
         BlockingQueue<String> inputQueue = new LinkedBlockingQueue<>();
         RoomUI ui = new RoomUI();
-        RoomLogic gameLogic = new RoomLogic(inputQueue, ui);
+        RoomLogic roomlogic = new RoomLogic(inputQueue, ui);
         RoomInput inputHandler = new RoomInput(inputQueue);
 
-        Thread logicThread = new Thread(gameLogic);
+        Thread logicThread = new Thread(roomlogic);
         logicThread.start();
         inputHandler.start();
 
