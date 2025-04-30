@@ -1,8 +1,5 @@
 package Quiz;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Scanner;
 
@@ -12,7 +9,7 @@ public class QuizMain {
         Scanner scanner = new Scanner(System.in);
         QuizDAO quizDAO = new QuizDAO();
         int totalCorrectCount = 0;
-        int setCorrectCount = 0;
+        int setCorrectCount;
 
         // 사용자 이름 입력 받기
         System.out.print("플레이어 이름을 입력하세요: ");
