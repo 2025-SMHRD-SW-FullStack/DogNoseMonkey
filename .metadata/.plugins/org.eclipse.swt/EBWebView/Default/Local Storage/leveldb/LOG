@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2025/04/30-17:07:30.422 dcc Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
 2025/04/30-17:07:30.432 dcc Recovering log #3
 2025/04/30-17:07:30.434 dcc Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
@@ -6,4 +7,9 @@
 2025/04/30-17:13:06.404 e54 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
 2025/04/30-17:13:06.429 e54 Recovering log #3
 2025/04/30-17:13:06.431 e54 Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+>>>>>>> HJM
+=======
+2025/04/30-17:21:48.293 3148 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
+2025/04/30-17:21:48.304 3148 Recovering log #3
+2025/04/30-17:21:48.306 3148 Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
 >>>>>>> HJM
