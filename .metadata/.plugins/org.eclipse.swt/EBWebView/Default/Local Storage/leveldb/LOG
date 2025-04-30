@@ -1,3 +1,2 @@
-2025/04/30-10:50:02.268 2ffc Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
-2025/04/30-10:50:02.274 2ffc Recovering log #3
-2025/04/30-10:50:02.276 2ffc Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/000003.log 
+2025/04/30-12:48:41.848 940 Creating DB C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb since it was missing.
+2025/04/30-12:48:41.862 940 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Local Storage\leveldb/MANIFEST-000001
