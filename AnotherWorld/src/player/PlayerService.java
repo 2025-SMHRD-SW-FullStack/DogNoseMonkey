@@ -1,6 +1,6 @@
 package player;
 
-import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -28,8 +28,20 @@ public class PlayerService {
 			return false;
 		}
 	}
+	
+	public ArrayList<PlayerDTO> Ranking() {
+        return playerDAO.Ranking();
+    }
 
 	private boolean isUsernameTaken(String username) {
 		return playerDAO.checkUsernameExists(username);
+	}
+
+	public PlayerDTO login(String username, String password) {
+		return playerDAO.login(username, password);
+	}
+	
+	public boolean delete(String username, String password) {
+		return playerDAO.delete(username, password);
 	}
 }

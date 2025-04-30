@@ -1,0 +1,42 @@
+package Inheritance;
+
+public class Question {
+
+	public static void main(String[] args) {
+		System.out.println("===== 현실에서 제일 많이 받고 싶은 객체 ======");
+		String[] s = {"★☆★☆★☆★☆★☆★☆★☆상속★☆★☆★☆★☆★☆★☆", "☆★☆★☆★☆★☆★☆★☆★상속☆★☆★☆★☆★☆★☆★☆★"};
+		for (int i = 0; i < 5;) {
+			System.out.println(s[1]);
+	        try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+
+	        // \r (캐리지 리턴): 커서를 줄 맨 앞으로 이동시킴
+	        System.out.print("\r                ");
+	        System.out.println(s[2]);
+	        try {
+				Thread.sleep(2000);
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+			}
+
+	        // \r (캐리지 리턴): 커서를 줄 맨 앞으로 이동시킴
+	        System.out.print("\r                ");
+	        
+		}
+		System.out.println("★☆★☆★☆★☆★☆★☆★☆상속★☆★☆★☆★☆★☆★☆");
+		System.out.println(".　∩＿＿＿∩\r\n"
+				+ "　 | ノ　 ノヽ、ヽ\r\n"
+				+ "　/　　●　　　● |\r\n"
+				+ " |　 　　　( _●_)　ミ　　이게뭐야..\r\n"
+				+ "彡､　　/⌒)(⌒ヽ/\r\n"
+				+ " ./　　/　 /　＼　 ヽ\r\n"
+				+ " l　　　 ノ　　　 `ｰ‐'\r\n"
+				+ "");
+	}
+
+}

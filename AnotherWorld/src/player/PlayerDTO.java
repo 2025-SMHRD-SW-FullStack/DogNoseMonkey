@@ -12,6 +12,10 @@ public class PlayerDTO {
         this.username = username;
         this.password = password;
     }
+    
+    public PlayerDTO() {
+    	
+    }
 
     // Getter 및 Setter
     public Long getPlayerId() {

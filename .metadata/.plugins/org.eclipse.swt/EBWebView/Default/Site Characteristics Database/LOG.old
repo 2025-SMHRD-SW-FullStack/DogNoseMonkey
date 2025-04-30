@@ -1,0 +1,7 @@
+2025/04/30-18:41:20.027 3d10 Log #7: 3 ops saved to Table #8 OK
+2025/04/30-18:41:20.028 3d10 Archiving C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000007.log: OK
+2025/04/30-18:41:20.028 3d10 Table #4: 2 entries OK
+2025/04/30-18:41:20.028 3d10 Table #5: 16 entries OK
+2025/04/30-18:41:20.028 3d10 Table #8: 3 entries OK
+2025/04/30-18:41:20.031 3d10 Archiving C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
+2025/04/30-18:41:20.038 3d10 **** Repaired leveldb C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database; recovered 3 files; 729 bytes. Some data may have been lost. ****
