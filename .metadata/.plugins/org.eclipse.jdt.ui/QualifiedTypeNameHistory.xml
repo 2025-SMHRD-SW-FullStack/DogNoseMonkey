@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="jdk.internal.classfile.impl.BufferedCodeBuilder.Model"/>
-    <fullyQualifiedTypeName name="player.PlayerController"/>
-    <fullyQualifiedTypeName name="player.PlayerDAO"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.sql.SQLException"/>
-    <fullyQualifiedTypeName name="player.PlayerDTO"/>
-</qualifiedTypeNameHistroy>

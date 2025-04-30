@@ -1,8 +1,0 @@
-INDEX VERSION 1.134+C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.jdt.core
-427687505.index
-<<<<<<< HEAD
-=======
-192081947.index
->>>>>>> HJM
-123090840.index
-1865797976.index

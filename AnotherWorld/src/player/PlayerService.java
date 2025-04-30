@@ -44,5 +44,4 @@ public class PlayerService {
 	public boolean delete(String username, String password) {
 		return playerDAO.delete(username, password);
 	}
-
 }
