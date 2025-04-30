@@ -1,2 +1,5 @@
-2025/04/28-10:25:05.684 1bc0 Creating DB C:\Users\smhrd\Desktop\Git Test\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Extension Rules since it was missing.
-2025/04/28-10:25:05.693 1bc0 Reusing MANIFEST C:\Users\smhrd\Desktop\Git Test\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Extension Rules/MANIFEST-000001
+<<<<<<< HEAD
+=======
+2025/04/30-10:25:12.772 2358 Creating DB C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Extension Rules since it was missing.
+2025/04/30-10:25:12.778 2358 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Extension Rules/MANIFEST-000001
+>>>>>>> HJM
