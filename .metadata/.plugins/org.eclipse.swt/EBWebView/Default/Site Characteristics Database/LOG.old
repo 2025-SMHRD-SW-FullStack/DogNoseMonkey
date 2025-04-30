@@ -1,1 +1,11 @@
+<<<<<<< HEAD
 2025/04/30-17:05:49.150 1578 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001
+=======
+2025/04/30-17:13:06.317 3dc8 Log #10: 2 ops saved to Table #11 OK
+2025/04/30-17:13:06.317 3dc8 Archiving C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/000010.log: OK
+2025/04/30-17:13:06.318 3dc8 Table #7: 2 entries OK
+2025/04/30-17:13:06.318 3dc8 Table #8: 1 entries OK
+2025/04/30-17:13:06.318 3dc8 Table #11: 2 entries OK
+2025/04/30-17:13:06.319 3dc8 Archiving C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database/MANIFEST-000001: OK
+2025/04/30-17:13:06.323 3dc8 **** Repaired leveldb C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Site Characteristics Database; recovered 3 files; 543 bytes. Some data may have been lost. ****
+>>>>>>> HJM
