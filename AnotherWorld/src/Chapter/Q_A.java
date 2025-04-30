@@ -56,7 +56,7 @@ public class Q_A {
     // 🧠 메인 메서드
     public static void main(String[] args) {
         // 🎶 음악 재생 시작
-        MusicPlayer bgm = new MusicPlayer("on-the-road-to-the-eighties_loop1-177567.wav");
+        MusicPlayer bgm = new MusicPlayer("src/Chapter/loop.wav");
         bgm.start();
 
         Scanner scanner = new Scanner(System.in);
