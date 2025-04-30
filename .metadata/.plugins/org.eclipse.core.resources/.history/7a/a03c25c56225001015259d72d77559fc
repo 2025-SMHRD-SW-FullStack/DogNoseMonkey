@@ -1,9 +1,0 @@
-package player;
-
-public class Main {
-    public static void main(String[] args) {
-        PlayerController playerController = new PlayerController();
-        playerController.registerPlayer();  // �쉶�썝媛��엯 吏꾪뻾
-        playerController.closeScanner();    // �궗�슜 �썑 Scanner �떕湲�
-    }
-}
