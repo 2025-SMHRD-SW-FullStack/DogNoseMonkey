@@ -7,7 +7,7 @@ public class PlayerDAO {
 
     public PlayerDAO() {
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/game_db", "hr", "12345");
+        	connection = DriverManager.getConnection("jdbc:oracle:thin:@project-db-campus.smhrd.com:1524:xe", "campus_25SW_FS_p1_5", "smhrd5");
         } catch (SQLException e) {
             e.printStackTrace();
         }
