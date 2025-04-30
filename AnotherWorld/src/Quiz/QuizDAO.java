@@ -17,6 +17,8 @@ public class QuizDAO {
             loadQuestions1();
         } else if (questionSet == 2) {
             loadQuestions2();
+        } else if (questionSet == 3) {
+        	loadQuestions3();
         }
         return questions;
     }
@@ -46,5 +48,18 @@ public class QuizDAO {
         questions.add(new QuizDTO("Q9. 메서드나 클래스에서 더 이상 오버라이딩할 수 없게 만드는 키워드는?\nA) final  B) static  C) abstract  D) private", "final"));
         questions.add(new QuizDTO("Q10. 클래스가 여러 개의 인터페이스를 동시에 구현할 수 있게 하는 자바 특징은?\nA) 다중상속  B) 다형성  C) 오버라이딩  D) 인터페이스", "인터페이스"));
     }
+    
+    private void loadQuestions3() {
+        questions.add(new QuizDTO("Q1. Java에서 상속을 구현하는 데 사용되는 키워드는 무엇인가요?", "extends"));
+        questions.add(new QuizDTO("Q2. 다음 중 Java에서 올바른 상속 구문은 무엇인가요?\nA) class Child : Parent {}\nB) class Child inherits Parent {}\nC) class Child extends Parent {}\nD) class Child implements Parent {}", "class Child extends Parent {}"));
+        questions.add(new QuizDTO("Q3. 슈퍼 클래스의 생성자를 호출하기 위해 서브 클래스에서 사용하는 키워드는 무엇인가요?", "super"));
+        questions.add(new QuizDTO("Q4. Java에서 상속의 주요 이점은 무엇인가요?\nA) 코드 재사용성\nB) 향상된 성능\nC) 더 나은 메모리 관리\nD) 더 빠른 컴파일 시간", "코드 재사용성"));
+        questions.add(new QuizDTO("Q5. 클래스가 다른 클래스를 상속할 때 어떤 유형의 관계가 형성되나요?\nA) \"has-a\" 관계\nB) \"is-a\" 관계\nC) \"uses-a\" 관계\nD) \"depends-on\" 관계", "is-a"));
+        questions.add(new QuizDTO("Q6. 다음 클래스 다이어그램에서 어떤 클래스가 슈퍼 클래스인가요?\n(UML 다이어그램, Vehicle -> Car)", "Vehicle"));
+        questions.add(new QuizDTO("Q7. 서브 클래스에서 슈퍼 클래스의 메서드를 재정의하는 것을 무엇이라고 하나요?", "오버라이딩"));
+        questions.add(new QuizDTO("Q8. 다음 코드의 출력은 무엇인가요?\nclass Animal {\n    String makeSound() {\n        return \"Generic Sound\";\n    }\n}\nclass Dog extends Animal {\n    String makeSound() {\n        return \"Bark\";\n    }\n}\npublic class Main {\n    public static void main(String[] args) {\n        Animal myDog = new Dog();\n        System.out.println(myDog.makeSound());\n    }\n}\n", "Bark"));
+        questions.add(new QuizDTO("Q9. 다음 중 Java의 상속 유형에 대한 설명으로 올바른 것은 무엇인가요?\nA) Java는 다중 상속을 지원합니다.\nB) Java는 단일 상속만 지원합니다.\nC) Java는 인터페이스를 통한 다중 상속을 지원합니다.\nD) Java는 상속을 전혀 지원하지 않습니다.", "Java는 단일 상속만 지원합니다."));
+        questions.add(new QuizDTO("Q10. 다음 클래스 선언에서 `final` 키워드의 목적은 무엇인가요? `final class MyClass {}`\nA) 클래스를 추상 클래스로 만듭니다.\nB) 클래스가 상속될 수 없도록 합니다.\nC) 클래스를 정적 클래스로 만듭니다.\nD) 클래스의 접근 수준을 private으로 설정합니다.", "클래스가 상속될 수 없도록 합니다."));
+    }
+    
 }
-
