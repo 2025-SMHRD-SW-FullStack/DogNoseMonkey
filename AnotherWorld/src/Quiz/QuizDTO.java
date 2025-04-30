@@ -1,7 +1,7 @@
 package Quiz;
 
 // DTO (Data Transfer Object) - 퀴즈 문제 정보를 담는 클래스
-class QuizDTO {
+public class QuizDTO {
     private String questionText;
     private String correctAnswer;
 
