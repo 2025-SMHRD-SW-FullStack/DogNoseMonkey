@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-{"sts":[{"expiry":1777536350.552681,"host":"Bb6CfwBW9xa4G2DyhI27lujzIm9QMX4njeP0qgg7n+Y=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1746000350.552683},{"expiry":1777339518.037415,"host":"6Rxq1ifSWlOJhzOYYdWRhfgKRZ4jrGi2e5lJ0HKREHQ=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1745803518.037418}],"version":2}
-=======
-{"sts":[{"expiry":1777536787.798652,"host":"Bb6CfwBW9xa4G2DyhI27lujzIm9QMX4njeP0qgg7n+Y=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1746000787.798655},{"expiry":1777512323.374892,"host":"6Rxq1ifSWlOJhzOYYdWRhfgKRZ4jrGi2e5lJ0HKREHQ=","mode":"force-https","sts_include_subdomains":true,"sts_observed":1745976323.374901}],"version":2}
->>>>>>> HJM
