@@ -37,7 +37,7 @@ public class PlayerController {
 		}
 	}
 
-	public void login() {
+	public boolean login() {
 		System.out.print("아이디를 입력하세요: ");
 		String username = scanner.nextLine();
 		System.out.print("비밀번호를 입력하세요: ");
@@ -47,8 +47,10 @@ public class PlayerController {
 
 		if (player != null) {
 			System.out.println(player.getPlayerName() + "님, 로그인 성공했습니다!");
+			return true;
 		} else {
 			System.out.println("아이디 또는 비밀번호가 틀렸습니다.");
+			return false;
 		}
 	}
 }
