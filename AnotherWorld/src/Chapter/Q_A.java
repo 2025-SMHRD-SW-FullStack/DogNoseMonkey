@@ -55,7 +55,7 @@ public class Q_A {
 
     // 메인 메소드
     public static void main(String[] args) {
-        // 🎶 음악 재생 시작
+        // 음악 재생 시작
         MusicPlayer bgm = new MusicPlayer("src/Chapter/loop.wav");
         bgm.start();
 
