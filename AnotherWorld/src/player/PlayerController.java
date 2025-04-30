@@ -1,5 +1,6 @@
 package player;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PlayerController {
@@ -53,4 +54,29 @@ public class PlayerController {
 			return false;
 		}
 	}
+	
+	public void Ranking() {
+	    ArrayList<PlayerDTO> list = playerService.Ranking();
+
+	    System.out.println("===== 랭킹 =====");
+	    for (PlayerDTO p : list) {
+	        System.out.println("ID: " + p.getUsername() + " 이름: " + p.getPlayerName());
+	    }
+	}
+	
+	public void quiz() {
+		 
+		
+	}
+	
+	public void delete() {
+		System.out.print("아이디를 입력하세요: ");
+		String username = scanner.nextLine();
+		System.out.print("비밀번호를 입력하세요: ");
+		String password = scanner.nextLine();
+
+		boolean player = playerService.delete(username, password);
+	}
+
+	
 }

@@ -14,7 +14,7 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int num = 0;
 		while (true) {
-			System.out.println("[1]회원가입 [2]로그인 [3]전체조회 [0]종료");
+			System.out.println("[1]회원가입 [2]로그인 [3]랭킹조회 [4]게임시작 [0]종료");
 			System.out.print(">> ");
 			num = sc.nextInt();
 			if (num == 1) {
@@ -25,9 +25,19 @@ public class Main {
 				if (succes) {
 					break;
 				}
+			} 
 			else if(num == 3) {
-				
+				playerController.Ranking();
+			} 
+			else if(num == 4) {
+				playerController.quiz();
 			}
+			else if(num == 11) {
+				playerController.delete();
+			}
+			else if(num == 0) {
+				System.out.println("게임을 종료합니다");
+				break;
 			}
 		}
 	}
