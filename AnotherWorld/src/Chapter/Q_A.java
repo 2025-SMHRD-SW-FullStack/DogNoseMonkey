@@ -6,7 +6,7 @@ import javax.sound.sampled.*;
 
 public class Q_A {
 
-    // 🎵 음악 재생 스레드
+    // 음악 재생 스레드
     public static class MusicPlayer extends Thread {
         private String filePath;
         private Clip clip;
@@ -38,7 +38,7 @@ public class Q_A {
         }
     }
 
-    // ❓ 퀴즈 문제 클래스
+    // 퀴즈 문제 클래스
     static class Question {
         String questionText;
         String correctAnswer;
@@ -53,7 +53,7 @@ public class Q_A {
         }
     }
 
-    // 🧠 메인 메서드
+    // 메인 메소드
     public static void main(String[] args) {
         // 🎶 음악 재생 시작
         MusicPlayer bgm = new MusicPlayer("src/Chapter/loop.wav");
@@ -93,7 +93,7 @@ public class Q_A {
 
         System.out.println("🎉 퀴즈 종료! 당신의 총 점수는: " + score + "점 입니다.");
 
-        // 🎵 음악 정지
+        // 음악 정지
         bgm.stopMusic();
         scanner.close();
     }
