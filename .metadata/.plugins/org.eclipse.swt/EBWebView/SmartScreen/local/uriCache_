@@ -1,1 +1,5 @@
-{"version":1,"cache_data":[]}
+<<<<<<< HEAD
+{"version":1,"cache_data":[{"file_hash":"789c33b5a5a142b3","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1746101250836871},{"file_hash":"63e5fe6274332ab6","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1746101149380814}]}
+=======
+{"version":1,"cache_data":[{"file_hash":"63e5fe6274332ab6","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1746078602448998},{"file_hash":"789c33b5a5a142b3","server_context":"1;f94c025f-7523-6972-b613-ce2c246c55ce;unkn:100;0.01","result":1,"response_category":"Allowed","expiration_time":1746077122237601}]}
+>>>>>>> HJM

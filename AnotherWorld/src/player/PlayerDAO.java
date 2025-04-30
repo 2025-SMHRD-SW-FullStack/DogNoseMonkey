@@ -1,12 +1,14 @@
 package player;
 
 import java.sql.*;
+import java.util.ArrayList;
 
 public class PlayerDAO {
     private Connection connection;
 
     public PlayerDAO() {
         try {
+        	connection = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "12345");
         	connection = DriverManager.getConnection("jdbc:oracle:thin:@project-db-campus.smhrd.com:1524:xe", "campus_25SW_FS_p1_5", "smhrd5");
         } catch (SQLException e) {
             e.printStackTrace();
@@ -59,4 +61,41 @@ public class PlayerDAO {
         }
         return false;
     }
+    
+    public ArrayList<PlayerDTO> Ranking() {
+        PlayerDTO dto = null;
+        ArrayList<PlayerDTO> list = new ArrayList<PlayerDTO>();
+        String query = "SELECT player_id, player_name, username FROM players";
+        
+        try (PreparedStatement stmt = connection.prepareStatement(query)) {
+            ResultSet rs = stmt.executeQuery();
+            while (rs.next()) {
+                dto = new PlayerDTO();
+                dto.setPlayerId(rs.getLong("player_id"));
+                dto.setPlayerName(rs.getString("player_name"));
+                dto.setUsername(rs.getString("username"));
+                list.add(dto);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        
+        return list;
+    }
+    
+    public boolean delete(String username, String password) {
+    	String query = "DELETE FROM players WHERE username = ? AND password = ?";
+        try (PreparedStatement stmt = connection.prepareStatement(query)) {
+            stmt.setString(1, username);
+            stmt.setString(2, password);
+            int result = stmt.executeUpdate();
+            return result > 0;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+    
+   
+    
 }

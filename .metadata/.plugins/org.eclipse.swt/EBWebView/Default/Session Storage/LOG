@@ -1,3 +1,15 @@
-2025/04/28-10:25:16.663 11c4 Reusing MANIFEST C:\Users\smhrd\Desktop\Git Test\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
-2025/04/28-10:25:16.664 11c4 Recovering log #3
-2025/04/28-10:25:16.665 11c4 Reusing old log C:\Users\smhrd\Desktop\Git Test\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+<<<<<<< HEAD
+<<<<<<< HEAD
+2025/04/30-17:07:30.530 dcc Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/30-17:07:30.533 dcc Recovering log #3
+2025/04/30-17:07:30.535 dcc Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+=======
+2025/04/30-17:13:07.115 e54 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/30-17:13:07.115 e54 Recovering log #3
+2025/04/30-17:13:07.117 e54 Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+>>>>>>> HJM
+=======
+2025/04/30-17:21:48.498 3148 Reusing MANIFEST C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/MANIFEST-000001
+2025/04/30-17:21:48.499 3148 Recovering log #3
+2025/04/30-17:21:48.501 3148 Reusing old log C:\Users\smhrd\Desktop\GitTest\.metadata\.plugins\org.eclipse.swt\EBWebView\Default\Session Storage/000003.log 
+>>>>>>> HJM
