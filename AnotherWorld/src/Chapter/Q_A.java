@@ -1,8 +1,44 @@
 package Chapter;
 
 import java.util.Scanner;
+import java.io.File;
+import javax.sound.sampled.*;
 
 public class Q_A {
+
+    // 🎵 음악 재생 스레드
+    public static class MusicPlayer extends Thread {
+        private String filePath;
+        private Clip clip;
+
+        public MusicPlayer(String filePath) {
+            this.filePath = filePath;
+        }
+
+        public void run() {
+            try {
+                File audioFile = new File(filePath);
+                if (!audioFile.exists()) {
+                    System.out.println("오디오 파일을 찾을 수 없습니다: " + filePath);
+                    return;
+                }
+                AudioInputStream audioStream = AudioSystem.getAudioInputStream(audioFile);
+                clip = AudioSystem.getClip();
+                clip.open(audioStream);
+                clip.loop(Clip.LOOP_CONTINUOUSLY); // 무한 반복 재생
+            } catch (Exception e) {
+                System.out.println("오디오 재생 오류: " + e.getMessage());
+            }
+        }
+
+        public void stopMusic() {
+            if (clip != null && clip.isRunning()) {
+                clip.stop();
+            }
+        }
+    }
+
+    // ❓ 퀴즈 문제 클래스
     static class Question {
         String questionText;
         String correctAnswer;
@@ -17,7 +53,12 @@ public class Q_A {
         }
     }
 
+    // 🧠 메인 메서드
     public static void main(String[] args) {
+        // 🎶 음악 재생 시작
+        MusicPlayer bgm = new MusicPlayer("on-the-road-to-the-eighties_loop1-177567.wav");
+        bgm.start();
+
         Scanner scanner = new Scanner(System.in);
 
         Question[] questions = new Question[] {
@@ -51,6 +92,9 @@ public class Q_A {
         }
 
         System.out.println("🎉 퀴즈 종료! 당신의 총 점수는: " + score + "점 입니다.");
+
+        // 🎵 음악 정지
+        bgm.stopMusic();
         scanner.close();
     }
 }
