@@ -1,73 +1,77 @@
 package Quiz;
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.util.List;
 import java.util.Scanner;
 
 public class QuizMain {
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         QuizDAO quizDAO = new QuizDAO();
-        int score = 0;
         int totalCorrectCount = 0;
         int setCorrectCount = 0;
+
+        // 사용자 이름 입력 받기
+        System.out.print("플레이어 이름을 입력하세요: ");
+        String playerName = scanner.nextLine();
 
         // 첫 번째 퀴즈 세트
         System.out.println("=== 반복문 퀴즈 게임 시작 1 ===");
         List<QuizDTO> questions1 = quizDAO.getQuestions(1);
-        setCorrectCount = playQuiz(scanner, quizDAO, questions1);
+        setCorrectCount = playQuiz(scanner, questions1);
         totalCorrectCount += setCorrectCount;
         if (setCorrectCount < questions1.size()) {
-            showFinalResult(totalCorrectCount);
-            scanner.close();
-            return; // 틀리면 종료
-        }
-
-        // 두 번째 퀴즈 세트
-        System.out.println("=== 객체지향 퀴즈 게임 시작 2 ===");
-        List<QuizDTO> questions2 = quizDAO.getQuestions(2);
-        setCorrectCount = playQuiz(scanner, quizDAO, questions2);
-        totalCorrectCount += setCorrectCount;
-        if (setCorrectCount < questions2.size()) {
-            showFinalResult(totalCorrectCount);
+            endGame(playerName, totalCorrectCount);
             scanner.close();
             return;
         }
 
-        // 세 번째 퀴즈 세트
+        // 두 번째 세트
+        System.out.println("=== 객체지향 퀴즈 게임 시작 2 ===");
+        List<QuizDTO> questions2 = quizDAO.getQuestions(2);
+        setCorrectCount = playQuiz(scanner, questions2);
+        totalCorrectCount += setCorrectCount;
+        if (setCorrectCount < questions2.size()) {
+            endGame(playerName, totalCorrectCount);
+            scanner.close();
+            return;
+        }
+
+        // 세 번째 세트
         System.out.println("=== 객체지향 퀴즈 게임 시작 3 ===");
         List<QuizDTO> questions3 = quizDAO.getQuestions(3);
-        setCorrectCount = playQuiz(scanner, quizDAO, questions3);
+        setCorrectCount = playQuiz(scanner, questions3);
         totalCorrectCount += setCorrectCount;
 
         scanner.close();
-        showFinalResult(totalCorrectCount); // 전체 결과 출력
+        endGame(playerName, totalCorrectCount);
     }
 
-    // 퀴즈 진행 메서드
-    public static int playQuiz(Scanner scanner, QuizDAO quizDAO, List<QuizDTO> questions) {
+    public static int playQuiz(Scanner scanner, List<QuizDTO> questions) {
         int correctCount = 0;
-        for (int i = 0; i < questions.size(); i++) {
-            QuizDTO currentQuestion = questions.get(i);
-            System.out.println(currentQuestion.getQuestionText());
+        for (QuizDTO q : questions) {
+            System.out.println(q.getQuestionText());
             System.out.print("당신의 답: ");
             String answer = scanner.nextLine();
 
-            if (currentQuestion.isCorrect(answer)) {
+            if (q.isCorrect(answer)) {
                 System.out.println("정답입니다!\n");
                 correctCount++;
             } else {
-                System.out.println("틀렸습니다. 정답은: " + currentQuestion.getCorrectAnswer() + "\n");
+                System.out.println("틀렸습니다. 정답은: " + q.getCorrectAnswer() + "\n");
                 return correctCount;
             }
         }
         return correctCount;
     }
 
-    // 최종 결과 출력
-    public static void showFinalResult(int totalCorrectCount) {
-        int score = totalCorrectCount * 10;
-        System.out.println("🎉 퀴즈 종료! 당신이 맞춘 문제 수는: " + totalCorrectCount + "개 입니다.");
+    public static void endGame(String name, int correctCount) {
+        int score = correctCount * 10;
+        System.out.println("🎉 퀴즈 종료! 당신이 맞춘 문제 수는: " + correctCount + "개 입니다.");
         System.out.println("🎉 퀴즈 종료! 당신의 총 점수는: " + score + "점 입니다.");
+        QuizScore.saveScore(name, score); // 점수 저장
     }
 }
