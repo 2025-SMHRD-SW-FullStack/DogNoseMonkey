@@ -6,4 +6,6 @@ public class Main {
         playerController.registerPlayer();  // 회원가입 진행
         playerController.closeScanner();    // 사용 후 Scanner 닫기
     }
+
 }
+
