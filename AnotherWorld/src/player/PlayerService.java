@@ -32,4 +32,9 @@ public class PlayerService {
 	private boolean isUsernameTaken(String username) {
 		return playerDAO.checkUsernameExists(username);
 	}
+
+	public PlayerDTO login(String username, String password) {
+		return playerDAO.login(username, password);
+	}
+
 }

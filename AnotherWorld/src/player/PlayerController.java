@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class PlayerController {
 	private PlayerService playerService;
+
     private Scanner scanner;
 
     public PlayerController() {
@@ -36,4 +37,5 @@ public class PlayerController {
             scanner.close();
         }
     }
+
 }
