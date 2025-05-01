@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
+
 	public static void main(String[] args) {
 		PlayerController playerController = new PlayerController();
 //        playerController.registerPlayer();  // 회원가입 진행
@@ -40,5 +41,7 @@ public class Main {
 				break;
 			}
 		}
+		
+		
 	}
 }

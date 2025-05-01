@@ -60,12 +60,15 @@ public class PlayerController {
 
 	    System.out.println("===== 랭킹 =====");
 	    for (PlayerDTO p : list) {
+<<<<<<< HEAD
 	        System.out.println("ID: " + p.getUsername() + " \t이름: " + p.getPlayerName()+ " \t점수: " +p.getScore());
+=======
+	        System.out.println("ID: " + p.getUsername() + "\t 이름: " + p.getPlayerName() + "\t 점수: " +p.getScore());
+>>>>>>> master
 	    }
 	}
 	
 	public void quiz() {
-		 
 		
 	}
 	
