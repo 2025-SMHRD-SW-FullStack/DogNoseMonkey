@@ -26,7 +26,8 @@ public class PlayerDAO {
                     rs.getLong("player_id"),
                     rs.getString("player_name"),
                     rs.getString("username"),
-                    rs.getString("password")
+                    rs.getString("password"),
+                    rs.getInt("score")
                 );
             }
         } catch (SQLException e) {

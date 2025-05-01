@@ -5,15 +5,19 @@ public class PlayerDTO {
     private String playerName;
     private String username;  // 로그인 아이디
     private String password;  // 로그인 패스워드
+    private int score;
 
-    public PlayerDTO(Long playerId, String playerName, String username, String password) {
-        this.playerId = playerId;
-        this.playerName = playerName;
-        this.username = username;
-        this.password = password;
-    }
+    public PlayerDTO(Long playerId, String playerName, String username, String password, int score) {
+		super();
+		this.playerId = playerId;
+		this.playerName = playerName;
+		this.username = username;
+		this.password = password;
+		this.score = score;
+	}
     
-    public PlayerDTO() {
+
+	public PlayerDTO() {
     	
     }
 
@@ -50,6 +54,14 @@ public class PlayerDTO {
         this.password = password;
     }
 
+    public int getScore() {
+    	return score;
+    }
+    
+    public void setScore(int score) {
+    	this.score = score;
+    }
+    
     @Override
     public String toString() {
         return "PlayerDTO{id=" + playerId + ", name='" + playerName + "', username='" + username + "'}";
