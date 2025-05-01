@@ -10,6 +10,9 @@ public class PlayerDTO {
 
 	public PlayerDTO(Long playerId, String playerName, String username, String password, int score) {
 		super();
+		if (password == null || password.isEmpty()) {
+			throw new IllegalArgumentException("비밀번호는 필수 항목입니다.");
+		}
 		this.playerId = playerId;
 		this.playerName = playerName;
 		this.username = username;
