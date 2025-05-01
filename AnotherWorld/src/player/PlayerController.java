@@ -21,7 +21,7 @@ public class PlayerController {
 		System.out.print("비밀번호를 입력하세요: ");
 		String password = scanner.nextLine();
 
-		PlayerDTO player = new PlayerDTO(null, playerName, username, password);
+		PlayerDTO player = new PlayerDTO(null, playerName, username, password, 0);
 		boolean success = playerService.registerPlayer(player);
 
 		if (success) {
@@ -60,7 +60,7 @@ public class PlayerController {
 
 	    System.out.println("===== 랭킹 =====");
 	    for (PlayerDTO p : list) {
-	        System.out.println("ID: " + p.getUsername() + " 이름: " + p.getPlayerName());
+	        System.out.println("ID: " + p.getUsername() + "\t 이름: " + p.getPlayerName() + "\t 점수: " +p.getScore());
 	    }
 	}
 	

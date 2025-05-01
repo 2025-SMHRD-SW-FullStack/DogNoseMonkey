@@ -14,8 +14,8 @@ public class RankingController {
 
     // 퀴즈 결과 저장
     public void submitQuizResult(PlayerDTO player, QuizDTO quiz) {
-        rankingDAO.saveScore(player.getPlayerId(), quiz.isCorrect(true));
-        System.out.println("점수가 저장되었습니다: " + quiz.isCorrect(true));
+//        rankingDAO.saveScore(player.getPlayerId(), quiz.isCorrect(true));
+//        System.out.println("점수가 저장되었습니다: " + quiz.isCorrect(true));
     }
 
     // 랭킹 출력
