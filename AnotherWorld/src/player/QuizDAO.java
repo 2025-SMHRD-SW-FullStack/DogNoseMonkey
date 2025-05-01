@@ -1,4 +1,4 @@
-package Quiz;
+package player;
 
 import java.util.ArrayList;
 import java.util.List;
