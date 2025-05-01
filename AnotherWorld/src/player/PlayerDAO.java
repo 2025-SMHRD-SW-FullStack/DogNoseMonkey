@@ -62,6 +62,7 @@ public class PlayerDAO {
         return false;
     }
     
+    // 랭킹 조회 메소드
     public ArrayList<PlayerDTO> Ranking() {
         PlayerDTO dto = null;
         ArrayList<PlayerDTO> list = new ArrayList<PlayerDTO>();

@@ -23,7 +23,7 @@ public class RankingDAO {
 			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 
 			// 3. SQL 쿼리 작성
-			String sql = "SELECT USERNAME,SCORE FROM PLAYERS ";
+			String sql = "SELECT USERNAME,SCORE FROM PLAYERS ORDER BY SCORE";
 
 			// 4. PreparedStatement 생성
 			psmt = conn.prepareStatement(sql);
@@ -34,7 +34,9 @@ public class RankingDAO {
 			System.out.println("====== 랭킹 조회 ======");
 			System.out.println("순위\t이름\t점수");
 			while(result.next()) {
-				System.out.println(result.getString("USERNAME") + "\t" + result.getString("SCORE"));
+				int rank =1;
+				System.out.println(rank+"\t"+result.getString("USERNAME") + "\t" + result.getString("SCORE"));
+				rank++;
 			}
 
 		} catch (ClassNotFoundException e) {
