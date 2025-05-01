@@ -27,7 +27,8 @@ public class PlayerDAO {
                     rs.getLong("player_id"),
                     rs.getString("player_name"),
                     rs.getString("username"),
-                    rs.getString("password")
+                    rs.getString("password"),
+                    rs.getInt("score")
                 );
             }
         } catch (SQLException e) {
@@ -66,15 +67,15 @@ public class PlayerDAO {
     public ArrayList<PlayerDTO> Ranking() {
         PlayerDTO dto = null;
         ArrayList<PlayerDTO> list = new ArrayList<PlayerDTO>();
-        String query = "SELECT player_id, player_name, username FROM players";
+        String query = "SELECT PLAYER_NAME, SCORE FROM PLAYERS ORDER BY SCORE";
+        
         
         try (PreparedStatement stmt = connection.prepareStatement(query)) {
             ResultSet rs = stmt.executeQuery();
             while (rs.next()) {
                 dto = new PlayerDTO();
-                dto.setPlayerId(rs.getLong("player_id"));
-                dto.setPlayerName(rs.getString("player_name"));
-                dto.setUsername(rs.getString("username"));
+                dto.setPlayerName(rs.getString("PLAYER_NAME"));
+                dto.setScore(rs.getInt("SCORE"));
                 list.add(dto);
             }
         } catch (SQLException e) {
