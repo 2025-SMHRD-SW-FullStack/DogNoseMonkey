@@ -1,4 +1,4 @@
-package Quiz;
+package player;
 
 // DTO (Data Transfer Object) - 퀴즈 문제 정보를 담는 클래스
 public class QuizDTO {

@@ -1,8 +1,9 @@
-package Quiz;
+package player;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class QuizScore {
@@ -11,28 +12,37 @@ public class QuizScore {
     private static final String USER = "campus_25SW_FS_p1_5";
     private static final String PASSWORD = "smhrd5";
 
-    public static void saveScore(String playerName, int score) {
+    public static void saveScore(String username, String playerName, int score) {
         Connection conn = null;
         PreparedStatement pstmt = null;
+        ResultSet rs = null;
         try {
             // 1. JDBC 드라이버 로드
             Class.forName("oracle.jdbc.driver.OracleDriver");
             // 2. 데이터베이스 연결 가져오기
             conn = DriverManager.getConnection(URL, USER, PASSWORD);
+            
+         // 3. 현재 점수를 조회하는 쿼리 작성
+            String checkScoreQuery = "SELECT score FROM players WHERE username = ?";
+            pstmt = conn.prepareStatement(checkScoreQuery);
+            pstmt.setString(1, username);
+            rs = pstmt.executeQuery();
 
-            // 3. SQL 쿼리 작성 (MERGE 구문 사용)
-            String sql = "INSERT INTO PLAYERS(SCORE) VALUES (?)"; 
+            int currentScore = 0;
+            
+            if (rs.next()) {
+                currentScore = rs.getInt("score");  // 기존 점수 가져오기
+            }
 
-            // 4. PreparedStatement 생성
-            pstmt = conn.prepareStatement(sql);
-            pstmt.setLong(1, score);
 
-            // 5. 쿼리 실행
-            int result = pstmt.executeUpdate();
-            if (result > 0) {
-                System.out.println("점수가 데이터베이스에 성공적으로 저장되었습니다.");
-            } else {
-                System.out.println("점수 저장에 실패했습니다."); // MERGE 구문은 0을 반환하지 않으므로, 이 else 블록은 실행되지 않아야 합니다.
+            if (score > currentScore) {
+                String sql = "UPDATE players SET score = ? WHERE username = ?";
+                pstmt = conn.prepareStatement(sql);
+                pstmt.setInt(1, score);
+                pstmt.setString(2, username);
+
+                // 5. 쿼리 실행
+                pstmt.executeUpdate();
             }
 
         } catch (ClassNotFoundException e) {

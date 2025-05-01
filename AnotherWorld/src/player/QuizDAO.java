@@ -1,4 +1,4 @@
-package Quiz;
+package player;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,16 +24,16 @@ public class QuizDAO {
     }
 
     private void loadQuestions1() {
-        questions.add(new QuizDTO("Q1. for(int i=0; i<5; i++) { System.out.print(i); } 출력 결과는?", "01234"));
-        questions.add(new QuizDTO("Q2. while(조건) 문에서 무한 루프를 만들려면 조건에 들어갈 말은?", "true"));
-        questions.add(new QuizDTO("Q3. do-while 문은 최소 몇 번 이상 실행되는가? (한 글자)", "1"));
-        questions.add(new QuizDTO("Q4. 다음 코드 실행 시 i 값은? int i=0; while(i<3){ i++; }", "3"));
-        questions.add(new QuizDTO("Q5. for()문의 기본 구성은?", "초기화;조건;증감"));
-        questions.add(new QuizDTO("Q6. break는 어떤 역할을 하나요?", "종료"));
-        questions.add(new QuizDTO("Q7. continue는 어떤 역할을 하나요?", "건너뛰기"));
-        questions.add(new QuizDTO("Q8. 다음 중 반복문이 아닌 것은? (if/while/for/do-while 중)", "if"));
-        questions.add(new QuizDTO("Q9. for-each 문은 어떤 자료형에 자주 사용되나요?", "배열"));
-        questions.add(new QuizDTO("Q10. 중첩 반복문이란 무엇인가요? (간단히: 반복문 안에 OOO)", "반복문"));
+        questions.add(new QuizDTO("Q1. for(int i=0; i<5; i++) { System.out.print(i); } 출력 결과는?\nA)12 B)012 C)1234 D)01234", "D"));
+        questions.add(new QuizDTO("Q2. while(조건) 문에서 무한 루프를 만들려면 조건에 들어갈 말은?\nA)false B)true C)not D)and", "B"));
+        questions.add(new QuizDTO("Q3. do-while 문은 최소 몇 번 이상 실행되는가?\nA)0 B)1 C)2 D)3", "B"));
+        questions.add(new QuizDTO("Q4. 다음 코드 실행 시 i 값은? int i=0; while(i<3){ i++; }\nA)3 B)2 C)1 D)0", "A"));
+        questions.add(new QuizDTO("Q5. for()문의 기본 구성은?\nA)초기화;증감;조건 B)증감;초기화;조건 C)초기화;조건;증감 D)조건;초기화;증감", "C"));
+        questions.add(new QuizDTO("Q6. break는 어떤 역할을 하나요?\nA)종료 B)건너뛰기 C)시작 D)반복", "A"));
+        questions.add(new QuizDTO("Q7. continue는 어떤 역할을 하나요?\nA)시작 B)종료 C)반복 D)건너뛰기", "D"));
+        questions.add(new QuizDTO("Q8. 다음 중 반복문이 아닌 것은?\nA)if B)while C)for D)do-while", "A"));
+        questions.add(new QuizDTO("Q9. for-each 문은 어떤 자료형에 자주 사용되나요?\nA)정수 B)리스트 C)배열 D)상수", "C"));
+        questions.add(new QuizDTO("Q10. 중첩 반복문이란 무엇인가요? (간단히: 반복문 안에 OOO)\nA)루프문 B)조건문 C)반복문 D)취소문", "C"));
     }
 
     private void loadQuestions2() {

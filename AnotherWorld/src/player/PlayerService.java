@@ -38,6 +38,10 @@ public class PlayerService {
 	}
 
 	public PlayerDTO login(String username, String password) {
+		if (password == null || password.isEmpty()) {
+	        System.out.println("비밀번호가 입력되지 않았습니다.");
+	        return null;  // 로그인 실패
+	    }
 		return playerDAO.login(username, password);
 	}
 	

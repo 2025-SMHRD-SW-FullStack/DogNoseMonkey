@@ -14,7 +14,8 @@ public class QuizMain {
         // 사용자 이름 입력 받기
         System.out.print("플레이어 이름을 입력하세요: ");
         String playerName = scanner.nextLine();
-
+        
+        
         // 첫 번째 퀴즈 세트
         System.out.println("=== 반복문 퀴즈 게임 시작 1 ===");
         List<QuizDTO> questions1 = quizDAO.getQuestions(1);
