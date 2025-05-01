@@ -5,20 +5,7 @@ public class PlayerDTO {
     private String playerName;
     private String username;  // 로그인 아이디
     private String password;  // 로그인 패스워드
-<<<<<<< HEAD
-    private int score;
 
-    public PlayerDTO(Long playerId, String playerName, String username, String password, int score) {
-		super();
-		this.playerId = playerId;
-		this.playerName = playerName;
-		this.username = username;
-		this.password = password;
-		this.score = score;
-	}
-    
-
-=======
     private int score;		  
     
 
@@ -31,7 +18,6 @@ public class PlayerDTO {
 		this.score = score;
 	}
 
->>>>>>> master
 	public PlayerDTO() {
     	
     }
