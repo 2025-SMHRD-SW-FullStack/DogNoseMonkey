@@ -55,4 +55,53 @@
 		<item key="DIALOG_HEIGHT" value="696"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
 	</section>
+	<section name="OptionalMessageDialog.hide.">
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\smhrd\Desktop\GitTest"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="Main - AnotherWorld"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\smhrd\Desktop\wow.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\smhrd\Desktop\wow.jar"/>
+			<item value="C:\Users\smhrd\Desktop\codydy.jar"/>
+			<item value="C:\Users\smhrd\Desktop\cody.jar"/>
+			<item value="C:\Users\smhrd\Desktop\lalalalalast.jar"/>
+			<item value="C:\Users\smhrd\Desktop\lalalalast.jar"/>
+			<item value="C:\Users\smhrd\Desktop\lalalast.jar"/>
+			<item value="C:\Users\smhrd\Desktop\Tlalast.jar"/>
+			<item value="C:\Users\smhrd\Desktop\TMaple Runner.jar"/>
+			<item value="C:\Users\smhrd\Desktop\Tales Runner.jar"/>
+			<item value="C:\Users\smhrd\Desktop\final1.jar"/>
+			<item value="C:\Users\smhrd\Desktop\final.jar"/>
+			<item value="C:\Users\smhrd\Desktop\story4.jar"/>
+			<item value="C:\Users\smhrd\Desktop\story3.jar"/>
+			<item value="C:\Users\smhrd\Desktop\story2.jar"/>
+			<item value="C:\Users\smhrd\Desktop\story1.jar"/>
+			<item value="C:\Users\smhrd\Desktop\story.jar"/>
+			<item value="C:\Users\smhrd\Desktop\test.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\smhrd\Desktop\GitTest.xml"/>
+			<item value=".xml"/>
+		</list>
+		<section name="FatJarPackageWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="675"/>
+			<item key="DIALOG_Y_ORIGIN" value="191"/>
+			<item key="DIALOG_WIDTH" value="586"/>
+			<item key="DIALOG_HEIGHT" value="550"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+	<section name="NewPackageCreationWizard.dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="706"/>
+		<item key="DIALOG_Y_ORIGIN" value="239"/>
+		<item key="DIALOG_WIDTH" value="525"/>
+		<item key="DIALOG_HEIGHT" value="434"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
+	</section>
 </section>
