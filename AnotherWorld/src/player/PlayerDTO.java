@@ -5,6 +5,7 @@ public class PlayerDTO {
     private String playerName;
     private String username;  // 로그인 아이디
     private String password;  // 로그인 패스워드
+
     private int score;		  
     
 
